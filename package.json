@@ -1,0 +1,61 @@
+{
+  "name": "nodejs-wp-rest-api",
+  "version": "1.0.0",
+  "description": "Create a interface to intercept requests for WP REST API.",
+  "main": "src",
+  "scripts": {
+    "start": "node .",
+    "test": "jest",
+    "dev": "nodemon -i \"*.test.js\" .",
+    "prod": "cross-env NODE_ENV=production nodemon -i \"*.test.js\" -r dotenv-safe/config .",
+    "lint": "eslint src",
+    "docs": "apidoc -i src -o docs && apidoc-markdown -p docs -o DOCS.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Apiki/nodejs-wp-rest-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "wp",
+    "rest",
+    "api"
+  ],
+  "author": "Apiki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Apiki/nodejs-wp-rest-api/issues"
+  },
+  "homepage": "https://github.com/Apiki/nodejs-wp-rest-api#readme",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-force-ssl": "^0.3.2",
+    "morgan": "^1.9.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "apidoc": "^0.17.6",
+    "apidoc-markdown": "^0.2.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "cross-env": "^5.2.0",
+    "dotenv-safe": "^6.0.0",
+    "eslint": "^5.2.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "jest-cli": "^23.4.2",
+    "nodemon": "^1.18.3"
+  }
+}
