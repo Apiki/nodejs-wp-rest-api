@@ -25,7 +25,14 @@ const config = {
     root: path.join(__dirname, '..'),
     port: process.env.PORT || 9000,
     ip: process.env.IP || '127.0.0.1',
-    apiRoot: process.env.API_ROOT || ''
+    apiRoot: process.env.API_ROOT || '',
+    apiPaths: {
+      wp: process.env.API_PATH_WP || 'https://blog.apiki.com/wp-json'
+    },
+    redisParams: {
+      host: process.env.REDIS_HOST || '127.0.0.1',
+      port: process.env.REDIS_POST || 6379
+    }
   },
   test: { },
   development: { },

@@ -1,8 +1,9 @@
 import { Router } from 'express'
-import posts from './posts'
+
+import single from './single'
 
 const router = new Router()
 
-router.use('/posts', posts)
+router.use('/single', single)
 
 export default router
